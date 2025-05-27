@@ -1,7 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
 }
 
 header {
@@ -17,18 +18,25 @@ header {
     height: 30px;
 }
 
+.search-bar {
+    display: flex;
+    flex: 1;
+    margin: 0 20px;
+}
+
 .search-bar input {
     padding: 8px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     border: 1px solid #ccc;
-    border-radius: 2px;
+    border-radius: 2px 0 0 2px;
 }
 
 .search-bar button {
     padding: 8px 16px;
     background-color: #f8f8f8;
     border: 1px solid #ccc;
-    border-radius: 2px;
+    border-radius: 0 2px 2px 0;
     cursor: pointer;
 }
 
@@ -41,13 +49,16 @@ header {
     cursor: pointer;
 }
 
+nav {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 nav ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 nav ul li {
@@ -57,6 +68,11 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #065fd4;
 }
 
 .video-grid {
@@ -66,16 +82,25 @@ nav ul li a {
     padding: 20px;
 }
 
+.video {
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 .video img {
     width: 100%;
     height: auto;
 }
 
 .video h3 {
-    margin: 10px 0;
+    margin: 10px;
+    font-size: 16px;
 }
 
 .video p {
-    margin: 5px 0;
+    margin: 0 10px 10px;
     color: #666;
+    font-size: 14px;
 }
