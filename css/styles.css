@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 30px;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.user-actions button {
+    padding: 8px 16px;
+    background-color: #065fd4;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.video img {
+    width: 100%;
+    height: auto;
+}
+
+.video h3 {
+    margin: 10px 0;
+}
+
+.video p {
+    margin: 5px 0;
+    color: #666;
+}
